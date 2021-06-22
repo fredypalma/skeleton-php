@@ -1,0 +1,36 @@
+{
+  "name": "skeleton-php",
+  "version": "1.0.0",
+  "description": "Estructura de carpetas para un proyecto php con symfony",
+  "author": "Fredy Palma",
+  "license": "ISC",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@testing-library/react": "^11.2.7",
+    "babel-jest": "^27.0.2",
+    "jest": "^27.0.4",
+    "jest-cucumber": "^3.0.1",
+    "jsdoc": "^3.6.7"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.steps.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredypalma/skeleton-php.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredypalma/skeleton-php/issues"
+  },
+  "homepage": "https://github.com/fredypalma/skeleton-php#readme"
+}
