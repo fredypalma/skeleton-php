@@ -5,10 +5,4 @@ Feature: Api status
 
   Scenario: Check the api status
     Given I send a GET request to "/health-check"
-    Then the response content should be:
-    """
-    {
-      "mooc-backend": "ok",
-      "rand": 1
-    }
-    """
+    Then the response status code should be "201"

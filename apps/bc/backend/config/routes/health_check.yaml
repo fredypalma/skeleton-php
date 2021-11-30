@@ -1,0 +1,3 @@
+health-check:
+  path: /health-check
+  controller: BC\Backend\Controller\healthCheck\HealthCheckController

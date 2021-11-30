@@ -1,0 +1,15 @@
+bc_behat:
+  extensions:
+    FriendsOfBehat\SymfonyExtension:
+      kernel:
+        class: BC\Backend\BCKernel
+        environment: ~
+    Behat\MinkExtension:
+      sessions:
+        symfony:
+          symfony: ~
+  suites:
+    health_check:
+      paths: [ tests/bc/apps/backend/features ]
+      contexts:
+        - BC\Tests\shared\infrastructure\behat\APIContext

@@ -1,8 +1,2 @@
-default:
-  autoload:
-    '': BC\Tests\
-  suites:
-    health_check:
-      paths: [ tests/apps/bc/backend/features ]
-      contexts:
-        - BC\Tests\apps\bc\backend\healt_check\HealtCheckContext
+imports:
+  - tests/bc/apps/backend/bc_behat.yml
