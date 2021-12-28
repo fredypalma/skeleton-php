@@ -1,0 +1,19 @@
+services:
+  # Alias Database Nican
+  Doctrine\ORM\EntityManager $BCEntityManager: '@bc_doctrine_repository'
+
+  # Configuration
+  bc_doctrine_repository:
+    class: CP\shared\infrastructure\doctrine\DoctrineRepository
+    factory: [ CP\bc\shared\infrastructure\doctrine\BCEntityManagerFactory, create ]
+    arguments:
+      - driver: '%env(MYSQL_DATABASE_DRIVER)%'
+        host: '%env(MYSQL_DATABASE_HOST)%'
+        port: '%env(MYSQL_DATABASE_PORT)%'
+        dbname: '%env(MYSQL_DATABASE_NAME)%'
+        user: '%env(MYSQL_DATABASE_USER)%'
+        password: '%env(MYSQL_DATABASE_PASSWORD)%'
+      - '%env(APP_ENV)%'
+    tags:
+      - { name: bc.database_connection }
+    public: true

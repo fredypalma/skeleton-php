@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace BC\Tests\shared\infrastructure\mink;
+namespace CP\Tests\shared\infrastructure\mink;
 
 use Behat\Mink\Driver\DriverInterface;
 use Behat\Mink\Session;

@@ -38,7 +38,6 @@ class BCKernel extends BaseKernel
     {
         $routes->import('../config/{routes}/' . $this->environment . '/*.yaml');
         $routes->import('../config/{routes}/*.yaml');
-        $routes->import('../config/routes/health_check.yaml');
         $routes->import('../config/routes/**/*.yaml');
     }
 }

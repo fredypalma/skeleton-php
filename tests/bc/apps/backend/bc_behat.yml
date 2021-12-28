@@ -12,4 +12,4 @@ bc_behat:
     health_check:
       paths: [ tests/bc/apps/backend/features ]
       contexts:
-        - BC\Tests\shared\infrastructure\behat\APIContext
+        - CP\Tests\shared\infrastructure\behat\APIContext

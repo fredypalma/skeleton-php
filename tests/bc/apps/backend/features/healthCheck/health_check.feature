@@ -4,5 +4,5 @@ Feature: Api status
   I want to check the api status
 
   Scenario: Check the api status
-    Given I send a GET request to "/health-check"
+    Given I send a "GET" request to "/health-check"
     Then the response status code should be "201"

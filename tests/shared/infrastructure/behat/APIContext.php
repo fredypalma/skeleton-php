@@ -1,12 +1,9 @@
 <?php
 
-namespace BC\Tests\shared\infrastructure\behat;
-
+namespace CP\Tests\shared\infrastructure\behat;
 
 use RuntimeException;
-use BC\Tests\shared\infrastructure\mink\MinkHelper;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Behat\Tester\Exception\PendingException;
+use CP\Tests\shared\infrastructure\mink\MinkHelper;
 use Behat\MinkExtension\Context\RawMinkContext;
 use Behat\Mink\Session;
 
@@ -27,14 +24,6 @@ class APIContext extends RawMinkContext
     public function iSendARequestTo($method, $url)
     {
         $this->minkHelper->sendRequest($method, $this->locatePath($url));
-    }
-
-    /**
-     * @Then the response content should be:
-     */
-    public function theResponseContentShouldBe(PyStringNode $string)
-    {
-        throw new PendingException();
     }
 
 
