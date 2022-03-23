@@ -67,7 +67,7 @@ class DbalTypesSearcher
 
             $namespaces = map(
                 static function (string $file) use ($path, $contextName) {
-                    $fullPath = "$path/$file";
+                    $fullPath = str_replace('/', '\\',"$path/$file");
                     $splittedPath = explode("\\src\\$contextName\\", $fullPath);
                     $classWithoutPrefix = str_replace(['.php', '/'], ['', '\\'], $splittedPath[1]);
 

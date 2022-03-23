@@ -15,7 +15,8 @@
     "symfony/twig-bundle": "^5.3",
     "doctrine/orm": "^2.10",
     "lambdish/phunctional": "^2.1",
-    "ramsey/uuid": "^4.2"
+    "ramsey/uuid": "^4.2",
+    "symfony/mailer": "^5.4"
   },
   "require-dev": {
     "behat/behat": "^3.8",

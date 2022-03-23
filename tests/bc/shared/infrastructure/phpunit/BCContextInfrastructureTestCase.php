@@ -34,7 +34,7 @@ abstract class BCContextInfrastructureTestCase extends InfrastructureTestCase
 
     protected function kernelClass(): string
     {
-        $this->service = 'hc_doctrine_repository';
+        $this->service = 'bc_doctrine_repository';
         return BCKernel::class;
     }
 
